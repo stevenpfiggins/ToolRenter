@@ -42,7 +42,7 @@ namespace ToolRenter.Data
         }
 
         public DbSet<Equipment> Equipments { get; set; }
-        //public DbSet<Request> Requests { get; set; }
+        public DbSet<Request> Requests { get; set; }
         //public DbSet<Profile> Profiles { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
