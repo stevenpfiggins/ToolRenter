@@ -5,6 +5,7 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
+using ToolRenter.Data;
 using ToolRenter.MVC.Models;
 
 namespace ToolRenter.MVC
