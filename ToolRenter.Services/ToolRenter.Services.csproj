@@ -9,4 +9,9 @@
     <PackageReference Include="Microsoft.AspNet.Identity.EntityFramework" Version="2.2.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ToolRenter.Data\ToolRenter.Data.csproj" />
+    <ProjectReference Include="..\ToolRenter.Models\ToolRenter.Models.csproj" />
+  </ItemGroup>
+
 </Project>
