@@ -10,4 +10,9 @@
     <PackageReference Include="System.ComponentModel.Annotations" Version="4.5.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ToolRenter.Data\ToolRenter.Data.csproj" />
+    <ProjectReference Include="..\ToolRenter.Models\ToolRenter.Models.csproj" />
+  </ItemGroup>
+
 </Project>
