@@ -32,6 +32,7 @@ namespace ToolRenter.WebAPI.Controllers
         }
 
         // POST
+        [HttpPost]
         public IHttpActionResult CreateRequest(RequestCreate request)
         {
             if (!ModelState.IsValid)
@@ -46,6 +47,7 @@ namespace ToolRenter.WebAPI.Controllers
         }
 
         // PUT
+        [HttpPut]
         public IHttpActionResult EditRequest(RequestEdit request)
         {
 
