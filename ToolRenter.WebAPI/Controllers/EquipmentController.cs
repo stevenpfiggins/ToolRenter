@@ -45,7 +45,19 @@ namespace ToolRenter.WebAPI.Controllers
         }
 
         //PUT Equipment Edit
+        [HttpPut]
+        public IHttpActionResult EquipmentEdit(EquipmentEdit equipment)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
 
+            var svc = CreateEquipmentService();
+
+            if (!svc.UpdateEquipment(equipment))
+                return InternalServerError();
+
+            return Ok("207");
+        }
         //DELETE Equipment Delete
         public IHttpActionResult DeleteEquipment(int id)
         {

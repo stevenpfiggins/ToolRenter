@@ -65,7 +65,7 @@ namespace ToolRenter.Services
             }
         }
 
-        public bool UpdateInvoice(EquipmentEdit model)
+        public bool UpdateEquipment(EquipmentEdit model)
         {
             using (var ctx = new ApplicationDbContext())
             {
