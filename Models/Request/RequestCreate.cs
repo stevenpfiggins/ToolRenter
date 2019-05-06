@@ -7,9 +7,7 @@ namespace ToolRenter.Models.Request
 {
     public class RequestCreate
     {
-        [Required]
-        [Display(Name ="Equipment Type")]
-        public string EquipmentTypeRequested { get; set; }
+        public int EquipmentId { get; set; }
 
         [Required]
         [Display(Name ="Start Date")]

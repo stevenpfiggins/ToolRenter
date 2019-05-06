@@ -22,7 +22,7 @@ namespace ToolRenter.Services
                 new Request()
                 {
                     OwnerId = _userId,
-                    EquipmentTypeRequested = model.EquipmentTypeRequested,
+                    EquipmentId = model.EquipmentId,
                     BeginningDateRequested = model.BeginningDateRequested,
                     EndingDateRequested = model.EndingDateRequested
                 };
@@ -47,7 +47,7 @@ namespace ToolRenter.Services
                                 new RequestListItem
                                 {
                                     RequestId = e.RequestId,
-                                    EquipmentTypeRequested = e.EquipmentTypeRequested,
+                                    EquipmentId = e.EquipmentId,
                                     BeginningDateRequested = e.BeginningDateRequested,
                                     EndingDateRequested = e.EndingDateRequested
                                 }
@@ -69,7 +69,7 @@ namespace ToolRenter.Services
                         new RequestDetail
                         {
                             RequestId = entity.RequestId,
-                            EquipmentTypeRequested = entity.EquipmentTypeRequested,
+                            EquipmentId = entity.EquipmentId,
                             BeginningDateRequested = entity.BeginningDateRequested,
                             EndingDateRequested = entity.EndingDateRequested
                         };
@@ -85,7 +85,7 @@ namespace ToolRenter.Services
                         .Requests
                         .Single(e => e.RequestId == model.RequestId && e.OwnerId == _userId);
 
-                entity.EquipmentTypeRequested = model.EquipmentTypeRequested;
+                entity.EquipmentId = model.EquipmentId;
                 entity.BeginningDateRequested = model.BeginningDateRequested;
                 entity.EndingDateRequested = model.EndingDateRequested;
 

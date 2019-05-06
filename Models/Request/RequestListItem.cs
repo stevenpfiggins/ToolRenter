@@ -9,8 +9,7 @@ namespace ToolRenter.Models.Request
     {
         public int RequestId { get; set; }
 
-        [Display(Name="Equipment Requested")]
-        public string EquipmentTypeRequested { get; set; }
+        public int EquipmentId { get; set; }
 
         [Display(Name ="Begin Date")]
         public DateTimeOffset BeginningDateRequested { get; set; }

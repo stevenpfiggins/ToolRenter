@@ -14,7 +14,7 @@ namespace ToolRenter.Data
         public Guid OwnerId { get; set; }
 
         [Required]
-        public string EquipmentTypeRequested { get; set; }
+        public int EquipmentId { get; set; }
 
         [Required]
         public DateTimeOffset BeginningDateRequested { get; set; }
