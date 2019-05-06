@@ -313,16 +313,16 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ToolRenter.Data\ToolRenter.Data.csproj">
-      <Project>{dacb8f8d-6999-4890-9827-e13bb4c1fd81}</Project>
+    <ProjectReference Include="..\Data\ToolRenter.Data.csproj">
+      <Project>{4ebe5c9b-08b7-4902-81f1-4728354d6c5c}</Project>
       <Name>ToolRenter.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ToolRenter.Models\ToolRenter.Models.csproj">
-      <Project>{286185bd-2a4d-4361-8ae9-ac2154d0d218}</Project>
+    <ProjectReference Include="..\Models\ToolRenter.Models.csproj">
+      <Project>{42f9b70b-b742-44ec-ba37-e96d05a32200}</Project>
       <Name>ToolRenter.Models</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ToolRenter.Services\ToolRenter.Services.csproj">
-      <Project>{313fcee9-b60d-4956-b684-1f91907600da}</Project>
+    <ProjectReference Include="..\Services\ToolRenter.Services.csproj">
+      <Project>{e8096d1c-6685-4c1c-9792-c7bfe502eca4}</Project>
       <Name>ToolRenter.Services</Name>
     </ProjectReference>
   </ItemGroup>
