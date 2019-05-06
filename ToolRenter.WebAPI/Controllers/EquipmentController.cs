@@ -31,7 +31,7 @@ namespace ToolRenter.WebAPI.Controllers
 
         //POST Equipment Create
         [HttpPost]
-        public IHttpActionResult CreateInvoice(EquipmentCreate equipment)
+        public IHttpActionResult CreateEquipment(EquipmentCreate equipment)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
@@ -58,6 +58,7 @@ namespace ToolRenter.WebAPI.Controllers
 
             return Ok("207");
         }
+
         //DELETE Equipment Delete
         public IHttpActionResult DeleteEquipment(int id)
         {
