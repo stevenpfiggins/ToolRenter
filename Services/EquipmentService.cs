@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Web;
 using ToolRenter.Data;
 using ToolRenter.Models.Equipment;
+using ToolRenter.Services.Engines.Equipment;
 
 namespace ToolRenter.Services
 {
@@ -18,13 +20,20 @@ namespace ToolRenter.Services
 
         public bool CreateEquipment(EquipmentCreate model)
         {
+            //Like mapper in Core
             var entity = new Equipment()
             {
                 OwnerId = _userId,
                 EquipmentName = model.EquipmentName,
+                EquipmentTypeId = model.EquipmentTypeId,
                 EquipmentDescription = model.EquipmentDescription,
                 EquipmentRate = model.EquipmentRate
             };
+
+            //Upload File Transfer to engine output a string
+            var engine = new PhotoUploadEngine();
+            var uri = engine.Upload(model.PhotoUpload);
+            entity.PhotoUpload = uri;
 
             using (var ctx = new ApplicationDbContext())
             {

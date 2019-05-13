@@ -25,6 +25,7 @@ namespace ToolRenter.Data
         [Required]
         public decimal EquipmentRate { get; set; }
 
-        //public IFormFile Picture { get; set; }
+        [Required]
+        public string PhotoUpload { get; set; }
     }
 }

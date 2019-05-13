@@ -69,6 +69,10 @@
     <Compile Include="Migrations\201905061620218_RequestRefactor.Designer.cs">
       <DependentUpon>201905061620218_RequestRefactor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201905081506423_PhotoUpload.cs" />
+    <Compile Include="Migrations\201905081506423_PhotoUpload.Designer.cs">
+      <DependentUpon>201905081506423_PhotoUpload.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Request.cs" />
@@ -86,6 +90,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201905061620218_RequestRefactor.resx">
       <DependentUpon>201905061620218_RequestRefactor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905081506423_PhotoUpload.resx">
+      <DependentUpon>201905081506423_PhotoUpload.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
