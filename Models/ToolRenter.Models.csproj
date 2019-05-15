@@ -67,6 +67,10 @@
     <Compile Include="Request\RequestDetail.cs" />
     <Compile Include="Request\RequestEdit.cs" />
     <Compile Include="Request\RequestListItem.cs" />
+    <Compile Include="UserProfile\UserProfileCreate.cs" />
+    <Compile Include="UserProfile\UserProfileDetail.cs" />
+    <Compile Include="UserProfile\UserProfileEdit.cs" />
+    <Compile Include="UserProfile\UserProfileListItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
