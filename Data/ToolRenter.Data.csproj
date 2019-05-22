@@ -73,6 +73,14 @@
     <Compile Include="Migrations\201905131527330_AddedUserProfile.Designer.cs">
       <DependentUpon>201905131527330_AddedUserProfile.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201905201440110_IdentityRoleSeedData.cs" />
+    <Compile Include="Migrations\201905201440110_IdentityRoleSeedData.Designer.cs">
+      <DependentUpon>201905201440110_IdentityRoleSeedData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905201517313_AddedUserToIdentityRole.cs" />
+    <Compile Include="Migrations\201905201517313_AddedUserToIdentityRole.Designer.cs">
+      <DependentUpon>201905201517313_AddedUserToIdentityRole.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Request.cs" />
@@ -94,6 +102,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201905131527330_AddedUserProfile.resx">
       <DependentUpon>201905131527330_AddedUserProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905201440110_IdentityRoleSeedData.resx">
+      <DependentUpon>201905201440110_IdentityRoleSeedData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905201517313_AddedUserToIdentityRole.resx">
+      <DependentUpon>201905201517313_AddedUserToIdentityRole.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

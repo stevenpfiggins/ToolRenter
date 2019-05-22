@@ -331,7 +331,14 @@ namespace ToolRenter.WebAPI.Controllers
 
             var user = new ApplicationUser() { UserName = model.Email, Email = model.Email };
 
+
+
             IdentityResult result = await UserManager.CreateAsync(user, model.Password);
+
+            if (model.Email == "admin@admin.com")
+            {
+                await UserManager.AddToRoleAsync(user.Id, "Admin");
+            }
 
             if (!result.Succeeded)
             {
